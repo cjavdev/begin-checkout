@@ -32,7 +32,6 @@ let body = `
 `
 
 export async function handler (req: object) {
-  console.log({stripe})
   return {
     statusCode: 200,
     headers: {
