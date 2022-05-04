@@ -1,4 +1,4 @@
-// import Stripe from "https://esm.sh/stripe?target=deno";
+import Stripe from "https://esm.sh/stripe?target=deno";
 
 // const stripe = Stripe(Deno.env.get("STRIPE_API_KEY"), {
 //   // This is needed to use the Fetch API rather than relying on the Node http
