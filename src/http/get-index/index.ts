@@ -1,3 +1,11 @@
+import Stripe from "https://esm.sh/stripe?target=deno";
+
+const stripe = Stripe(Deno.env.get("STRIPE_API_KEY"), {
+  // This is needed to use the Fetch API rather than relying on the Node http
+  // package.
+  httpClient: Stripe.createFetchHttpClient(),
+});
+
 // TODO: modify the body object!
 let body = `
 <!doctype html>
