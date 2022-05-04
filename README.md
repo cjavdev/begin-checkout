@@ -1,2 +1,0 @@
-# begin-checkout
-Begin app
